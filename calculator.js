@@ -129,6 +129,12 @@ function independent(object) {
         number2 = 0;
 
     }
+     else if (operator == "00") {
+        c = number1 * (-1);
+        number1 = c;
+        number2 = 0;
+
+    }
     document.getElementById("display").value = c;
     operator = "null";
     check = false;

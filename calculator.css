@@ -1,10 +1,61 @@
-.main{
-    height: 500px;
-    width: 400px;
-    margin: auto;
-    border: 1px solid black;
+body{
+    background-color: rgb(234, 200, 165);
 }
+
+.main{
+    height: auto;
+    width:265px;
+    margin: auto;
+    margin-top: 50px;
+
+    text-align: center;
+
+}
+
+#display{
+
+    height: 70px;
+    width: 245px;
+    font-size: 30px;
+    background-color:rgba(208, 230, 112, 0.85);
+    color: rgba(0, 0, 0, 0.62);
+    border: 4px solid rgba(24, 106, 177, 0.59);
+}
+
 button{
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
+    margin: 1px 0px;
+    font-size: 20px;
+}
+
+
+#operator{
+    background-color: rgba(235, 131, 26, 0.76);
+    border: 2x solid rgba(235, 131, 26, 0.87);
+
+}
+#operator:hover{
+    background-color: rgb(235, 131, 26);
+}
+ #number{
+     background-color: rgba(109, 121, 221, 0.57);
+    border: 2x solid rgba(109, 121, 221, 0.91);
+}
+
+#number:hover{
+    background-color: rgba(109, 121, 221, 0.87);
+}
+
+#result{
+    width: 125px;
+    font-size: 20px;
+    background-color: rgba(34, 51, 191, 0.6);
+    border: 2x solid rgba(34, 51, 191, 0.87);
+    position: relative;
+    top: 2px;
+}
+
+#result:hover{
+    background-color: rgba(34, 51, 191, 0.81);
 }
