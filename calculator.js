@@ -3,6 +3,13 @@ var number1 = 0;
 var number2 = 0;
 var check = false;
 var counter = 0;
+document.getElementById("display").value = "0";
+
+//var p= document.getElementById("display").value;
+//if(document.getElementById("display").value.length>12){
+//   alert("You are not allowed to Enter more that 12 digit");
+//}
+//
 
 function operation(object) {
     operator = object.getAttribute("value");
@@ -28,6 +35,8 @@ function enterDecimal() {
 function enterText(object) {
 
     var available = document.getElementById("display").value;
+
+
     var temp = parseFloat(object.getAttribute("value"));
     var c = 0;
     var a = 0;
@@ -44,7 +53,10 @@ function enterText(object) {
         } else {
             number1 = number1 * 10 + temp;
         }
-
+        if (number1.toString().length>12) {
+            alert("You are not allowed to Enter more that 12 digit");
+            return;
+        }
         document.getElementById("display").value = "";
         document.getElementById("display").value = number1;
     } else if (operator == "null") {
@@ -61,6 +73,10 @@ function enterText(object) {
         } else {
             number1 = number1 * 10 + temp;
         }
+        if (number1.toString().length>12) {
+            alert("You are not allowed to Enter more that 12 digit");
+            return;
+        }
         document.getElementById("display").value = "";
         document.getElementById("display").value = number1;
 
@@ -75,6 +91,10 @@ function enterText(object) {
             counter = tempCounter + 1;
         } else {
             number2 = number2 * 10 + temp;
+        }
+        if (number2.toString().length>12) {
+            alert("You are not allowed to Enter more that 12 digit");
+            return;
         }
         document.getElementById("display").value = "";
         document.getElementById("display").value = number2;

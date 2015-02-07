@@ -1,32 +1,39 @@
 <!doctype html>
+
 <head>
-<title>Calculator</title>
+    <title>Calculator</title>
     <link rel="stylesheet" type="text/css" href="calculator.css" />
 
 </head>
+
 <body>
 
-<div class="main">
-    <input type="text" id="display"><br>
-    <button type="button" id="operator" onclick="clearAll();">AC</button>
-    <button type="button" id="operator" value="inverse" onclick="independent(this);">+/-</button>
-    <button type="button" id="operator" value="%" onclick="independent(this);">%</button>
-    <button type="button" id="operator" value="/" onclick="operation(this);">/</button> <br>
-    <button type="button" id ="number" value="7" onclick="enterText(this);">7</button>
-    <button type="button" id ="number" value="8" onclick="enterText(this);">8</button>
-    <button type="button" id ="number" value="9" onclick="enterText(this);">9</button>
-     <button type="button" id="operator" value="X" onclick="operation(this);">X</button> <br>
-    <button type="button" id ="number" value="4" onclick="enterText(this);">4</button>
-    <button type="button" id ="number" value="5" onclick="enterText(this);">5</button>
-    <button type="button" id ="number" value="6" onclick="enterText(this);">6</button>
-     <button type="button" id="operator" value="-" onclick="operation(this);">-</button> <br>
-    <button type="button" id ="number" value="1" onclick="enterText(this);">1</button>
-    <button type="button" id ="number" value="2" onclick="enterText(this);">2</button>
-    <button type="button" id ="number" value="3" onclick="enterText(this);">3</button>
-     <button type="button" id="operator" value="+" onclick="operation(this);">+</button> <br>
-    <button type="button" id ="number" value="0" onclick="enterText(this);">0</button>
-    <button type="button" id ="number" value="." onclick="enterDecimal();">.</button>
-     <button type="button" id="result" onclick="result();">=</button>
+    <div class="main">
+        <input type="text" maxlength="12" id="display">
+        <br>
+        <button type="button" id="operator" onclick="clearAll();">AC</button>
+        <button type="button" id="operator" value="inverse" onclick="independent(this);">+/-</button>
+        <button type="button" id="operator" value="%" onclick="independent(this);">%</button>
+        <button type="button" id="operator" value="/" onclick="operation(this);">/</button>
+        <br>
+        <button type="button" id="number" value="7" onclick="enterText(this);">7</button>
+        <button type="button" id="number" value="8" onclick="enterText(this);">8</button>
+        <button type="button" id="number" value="9" onclick="enterText(this);">9</button>
+        <button type="button" id="operator" value="X" onclick="operation(this);">X</button>
+        <br>
+        <button type="button" id="number" value="4" onclick="enterText(this);">4</button>
+        <button type="button" id="number" value="5" onclick="enterText(this);">5</button>
+        <button type="button" id="number" value="6" onclick="enterText(this);">6</button>
+        <button type="button" id="operator" value="-" onclick="operation(this);">-</button>
+        <br>
+        <button type="button" id="number" value="1" onclick="enterText(this);">1</button>
+        <button type="button" id="number" value="2" onclick="enterText(this);">2</button>
+        <button type="button" id="number" value="3" onclick="enterText(this);">3</button>
+        <button type="button" id="operator" value="+" onclick="operation(this);">+</button>
+        <br>
+        <button type="button" id="number" value="0" onclick="enterText(this);">0</button>
+        <button type="button" id="number" value="." onclick="enterDecimal();">.</button>
+        <button type="button" id="result" onclick="result();">=</button>
     </div>
-     <script src="calculator.js"></script>
+    <script src="calculator.js"></script>
 </body>
