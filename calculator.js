@@ -3,6 +3,7 @@ var number1 = 0;
 var number2 = 0;
 var check = false;
 var counter = 0;
+var augmentor=true;
 document.getElementById("display").value = "0";
 
 //var p= document.getElementById("display").value;
@@ -15,6 +16,7 @@ function operation(object) {
     operator = object.getAttribute("value");
     check = false;
     counter = 0;
+    augmentor=true;
 }
 
 function clearAll() {
@@ -54,6 +56,23 @@ function enterText(object) {
             number1 = number1 * 10 + temp;
         }
 
+ if(document.getElementById("display").value.toString().indexOf(".")!=-1){
+         var p=document.getElementById("display").value;
+        var q=p.replace(".","0");
+        if(q.length>12){
+         alert("You are not allowed to Enter more that 12 digit");
+            return ;
+        }
+
+        }
+        else{
+            var p=document.getElementById("display").value;
+            if(p.length>12){
+         alert("You are not allowed to Enter more that 12 digit");
+                return ;
+        }
+
+        }
         document.getElementById("display").value = "";
         document.getElementById("display").value = number1;
     } else if (operator == "null") {
@@ -71,6 +90,25 @@ function enterText(object) {
             number1 = number1 * 10 + temp;
         }
 
+        if(document.getElementById("display").value.toString().indexOf(".")!=-1){
+         var p=document.getElementById("display").value;
+        var q=p.replace(".","0");
+        if(q.length>12){
+         alert("You are not allowed to Enter more that 12 digit");
+            return;
+        }
+
+        }
+        else{
+            var p=document.getElementById("display").value;
+            if(p.length>12){
+         alert("You are not allowed to Enter more that 12 digit");
+                return;
+        }
+
+        }
+
+
         document.getElementById("display").value = "";
         document.getElementById("display").value = number1;
 
@@ -86,7 +124,28 @@ function enterText(object) {
         } else {
             number2 = number2 * 10 + temp;
         }
+        if(augmentor){
+         document.getElementById("display").value = "";
+            augmentor=false;
+        }
 
+         if(document.getElementById("display").value.toString().indexOf(".")!=-1){
+         var p=document.getElementById("display").value;
+        var q=p.replace(".","0");
+        if(q.length>12){
+         alert("You are not allowed to Enter more that 12 digit");
+            return;
+        }
+
+        }
+        else{
+            var p=document.getElementById("display").value;
+            if(p.length>12){
+         alert("You are not allowed to Enter more that 12 digit");
+                return ;
+        }
+
+        }
         document.getElementById("display").value = "";
         document.getElementById("display").value = number2;
     }
