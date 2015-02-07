@@ -53,10 +53,7 @@ function enterText(object) {
         } else {
             number1 = number1 * 10 + temp;
         }
-        if (number1.toString().length>12) {
-            alert("You are not allowed to Enter more that 12 digit");
-            return;
-        }
+
         document.getElementById("display").value = "";
         document.getElementById("display").value = number1;
     } else if (operator == "null") {
@@ -73,10 +70,7 @@ function enterText(object) {
         } else {
             number1 = number1 * 10 + temp;
         }
-        if (number1.toString().length>12) {
-            alert("You are not allowed to Enter more that 12 digit");
-            return;
-        }
+
         document.getElementById("display").value = "";
         document.getElementById("display").value = number1;
 
@@ -92,10 +86,7 @@ function enterText(object) {
         } else {
             number2 = number2 * 10 + temp;
         }
-        if (number2.toString().length>12) {
-            alert("You are not allowed to Enter more that 12 digit");
-            return;
-        }
+
         document.getElementById("display").value = "";
         document.getElementById("display").value = number2;
     }
